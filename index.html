@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultaCep</title>
+    <script src="js/main.js"></script>
+
+  <!--JQUERY-->
+    <script src="js/jquery.js"></script>
+
+    <!--Css do bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<!--navbar-->
+<div class="container" style="width: 760px;">
+    <nav style="border-radius: 6px;" id="navbar-example2" class="navbar navbar-light bg-light">
+        <a class="btn btn-success" class="navbar-brand" href="#">CONSULTAR CEP BRASIL</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link btn btn-success" href="#">Contato</a>
+          </li>
+          <li style="padding: 0 4px;" class="nav-item">
+            <a class="nav-link btn btn-success" href="#">Sobre</a>
+          </li>
+            </div>
+          </li>
+        </ul>
+      </nav>
+</div>
+
+    <div  class="container" style="margin-top: 25px; width: 420px;">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">CEP</span>
+            </div>
+            <input  class="form-control" placeholder="ex: 69018-000" id="cep">
+            <button onclick="consultaCep()" class="btn btn-outline-success" type="button">Consultar</button>
+        </div>
+
+        <div class="row" >
+            <table class="table" style="margin-top: 15px;" >
+                <tbody>
+                    <tr>
+                        <td style="border-radius: 10px 0 0 10px;" class="bg-success text-white" >Logradouro:</td>
+                        <td style="border-radius: 0 10px 10px 0;" class="bg-success text-white" id="logradouro"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius: 10px 0 0 10px;" class="bg-success text-white">Complemento:</td>
+                        <td style="border-radius: 0 10px 10px 0;" class="bg-success text-white" id="complemento"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius: 10px 0 0 10px;" class="bg-success text-white">Bairro:</td>
+                        <td style="border-radius: 0 10px 10px 0;" class="bg-success text-white" id="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius: 10px 0 0 10px;" class="bg-success text-white">Localidade:</td>
+                        <td style="border-radius: 0 10px 10px 0;" class="bg-success text-white" id="localidade"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius: 10px 0 0 10px;" class="bg-success text-white">UF:</td>
+                        <td style="border-radius: 0 10px 10px 0;" class="bg-success text-white" id="uf"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!--Rodapé-->
+    <div class="container" style="width: 760px; margin-top:140px; border-radius: 8px;"  >
+        <div class="navbar-example2 bg-light" style="border-radius: 8px; padding: 10px;">
+            <h4>Olá, Bem-vindo!</h4>
+            <p class="lead">Esse sistema permite que você busque um edereço com apenas o seu cep.</p>
+            <hr class="my-4">Criador desse sistema <strong>@GabrielCastro</strong> clique em contato para ver o seu portfólio,</p>
+            <p>Obrigado por usar esse serviço.</p>
+          </div>
+      </div>
+
+    
+
+    <!--javascript do bootstrap presta atenção com o primeiro link Jquery-->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
