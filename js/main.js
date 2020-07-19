@@ -1,7 +1,5 @@
 //sitema de cep com ajax e jquery
 
-
-
 function consultaCep(){
     var cep = document.getElementById("cep").value
     var url = "https://viacep.com.br/ws/"+ cep +"/json/"
@@ -20,7 +18,6 @@ function consultaCep(){
         }
     })
 }
-
             //essa e outra maneira de se fazer
             
             //document.getElementById("logradouro").innerHTML = response.logradouro
