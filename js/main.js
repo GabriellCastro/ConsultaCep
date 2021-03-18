@@ -1,6 +1,6 @@
 function consultaCep(){
     let cep = document.getElementById("cep").value;
-    let url = `https://viacep.com.br/ws/"${cep}"/json/`;
+    let url = `https://viacep.com.br/ws/${cep}/json/`;
     $.ajax({
         url: url,
         type: "GET",
